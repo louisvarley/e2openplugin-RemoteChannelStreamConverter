@@ -364,9 +364,9 @@ class StreamingChannelFromServerScreen(Screen):
 						if was_html and '#DESCRIPTION' in line:
 							was_html = False
 							continue
-						if '#NAME' in line:
-							txt = _("remote of")
-							line = "%s (%s %s) \n" % (line.rstrip('\n'), txt, self.getRemoteAdress())
+						#if '#NAME' in line:
+							#txt = _("remote of")
+							#line = "%s (%s %s) \n" % (line.rstrip('\n'), txt, self.getRemoteAdress())
 						was_html = False
 						if 'http' in line:
 							was_html = True
